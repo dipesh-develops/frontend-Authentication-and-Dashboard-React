@@ -1,8 +1,9 @@
+import Layout from "./components/pages/Layout";
 
 function App() {
   return (
     <div>
-        <h1>NEW PROJECT</h1>
+      <Layout/>
     </div>
   );
 }
