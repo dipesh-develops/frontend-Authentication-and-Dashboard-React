@@ -1,11 +1,14 @@
+import {Outlet} from "react-router-dom"
 import React from 'react'
+
 import Navbar from '../Navbar'
 
 const Layout = () => {
   return (
     <>
       <Navbar/>
-      <h1>Home Page</h1>
+      {/* renders child element outlet */}
+      <Outlet/>
     </>
   )
 }
