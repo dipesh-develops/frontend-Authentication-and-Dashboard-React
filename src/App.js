@@ -1,3 +1,5 @@
+import './App.css';
+
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Contact from "./components/pages/Contact";
@@ -6,6 +8,7 @@ import Layout from "./components/pages/Layout";
 import { createTheme } from "@mui/material/styles";
 
 import { ThemeProvider } from "@emotion/react";
+import LoginReg from "./components/pages/auth/LoginReg";
 
 const theme = createTheme({
   palette: {
@@ -35,6 +38,7 @@ function App() {
             <Route  index element={<Home/>}/>
             <Route  path='contact' element={<Contact/>}/>
             <Route  path='about' element={<About/>}/>
+            <Route  path='login' element={<LoginReg/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
