@@ -16,7 +16,7 @@ const Navbar = () => {
               to="/"
               sx={{ color: "white", textTransform: "none" }}
               style={({ isActive }) => {
-                return { backgroundColor: isActive ? "#6d1b7b" : "" };
+                return { backgroundColor: isActive ? "#fe5000" : "" };
               }}
             >
               Home
@@ -26,7 +26,7 @@ const Navbar = () => {
               to="about"
               sx={{ color: "white", textTransform: "none" }}
               style={({ isActive }) => {
-                return { backgroundColor: isActive ? "#6d1b7b" : "" };
+                return { backgroundColor: isActive ? "#fe5000" : "" };
               }}
             >
               About
@@ -36,7 +36,7 @@ const Navbar = () => {
               to="contact"
               sx={{ color: "white", textTransform: "none" }}
               style={({ isActive }) => {
-                return { backgroundColor: isActive ? "#6d1b7b" : "" };
+                return { backgroundColor: isActive ? "#fe5000" : "" };
               }}
             >
               Contact
@@ -46,7 +46,7 @@ const Navbar = () => {
               to="login"
               sx={{ color: "white", textTransform: "none" }}
               style={({ isActive }) => {
-                return { backgroundColor: isActive ? "#6d1b7b" : "" };
+                return { backgroundColor: isActive ? "#fe5000" : "" };
               }}
             >
               Login/Register
