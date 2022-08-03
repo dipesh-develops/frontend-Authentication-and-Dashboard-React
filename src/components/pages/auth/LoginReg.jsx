@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Grid, Card, Typography, Tabs, Tab, Box } from "@mui/material";
 import auth from "../../../assets/images/auth.png";
+import UserLogin from "./UserLogin";
 
 const TabPanel = (props) => {
   const { children, value, index } = props;
@@ -24,9 +25,9 @@ const LoginReg = () => {
           lg={7}
           sm={5}
           sx={{
+            marginTop: "20px",
             backgroundImage: `url(${auth})`,
             backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
             backgroundPostion: "center",
             display: { xs: "none", sm: "block" },
           }}
@@ -52,7 +53,7 @@ const LoginReg = () => {
                 </Tabs>
               </Box>
               <TabPanel value={value} index={0}>
-                User Login
+                <UserLogin />
               </TabPanel>
               <TabPanel value={value} index={1}>
                 Registration
