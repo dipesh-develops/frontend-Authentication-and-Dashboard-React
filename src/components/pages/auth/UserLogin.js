@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import {Button, Box,Alert, TextField} from '@mui/material';
-import { NavLink } from 'react-router-dom';
+import { NavLink,useNavigate } from 'react-router-dom';
+
 
 const UserLogin = () => {
     const[error,setError]=useState({status:false,msg:'',type:''})
+    const navigate=useNavigate();
     const handleSubmit= (e)=>{
         e.preventDefault();
         const data = new FormData(e.currentTarget);
@@ -16,6 +18,7 @@ const UserLogin = () => {
              console.log(actualData)
              document.getElementById('login-form').reset()
              setError({status:true,msg:"Login Success",type:'success'})
+             navigate('/')
         }else {
             setError({status:true,msg:"All Fields are Required",type:'error'})
         }
