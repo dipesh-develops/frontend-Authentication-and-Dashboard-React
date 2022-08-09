@@ -37,7 +37,7 @@ const Registration = () => {
           msg: "Registration Successful",
           type: "success",
         });
-        //   navigate("/");
+        navigate("/");
       } else {
         setError({
           status: true,

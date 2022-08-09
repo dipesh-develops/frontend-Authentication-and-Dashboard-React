@@ -9,6 +9,7 @@ import { createTheme } from "@mui/material/styles";
 
 import { ThemeProvider } from "@emotion/react";
 import LoginReg from "./components/pages/auth/LoginReg";
+import SendPasswordResultEmail from './components/pages/auth/SendPasswordResultEmail';
 
 const theme = createTheme({
   palette: {
@@ -39,6 +40,7 @@ function App() {
             <Route  path='contact' element={<Contact/>}/>
             <Route  path='about' element={<About/>}/>
             <Route  path='login' element={<LoginReg/>}/>
+            <Route  path='passwordreset' element={<SendPasswordResultEmail />}/>
           </Route>
         </Routes>
       </BrowserRouter>
