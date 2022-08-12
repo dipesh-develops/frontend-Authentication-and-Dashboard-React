@@ -11,6 +11,7 @@ import { ThemeProvider } from "@emotion/react";
 import LoginReg from "./components/pages/auth/LoginReg";
 import SendPasswordResultEmail from './components/pages/auth/SendPasswordResultEmail';
 import ResetPassword from './components/pages/auth/ResetPassword';
+import Dashboard from './components/pages/Dashboard';
 
 const theme = createTheme({
   palette: {
@@ -44,6 +45,7 @@ function App() {
             <Route  path='passwordreset' element={<SendPasswordResultEmail />}/>
             <Route  path='reset' element={<ResetPassword />}/>
           </Route>
+          <Route  path='/dashboard' element={<Dashboard />}/>
         </Routes>
       </BrowserRouter>
     </div>
