@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, CssBaseline, Grid, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import ChangePassword from "./auth/ChangePassword";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -11,12 +12,13 @@ const Dashboard = () => {
   return (
     <>
       <CssBaseline />
-      <Grid>
+      <Grid container>
         <Grid
           item
           sm={4}
           sx={{ backgroundColor: "gray", p: 5, color: "white" }}
         >
+          <h1>Dashboard</h1>
           {/* static email and name */}
           <Typography variant="h5">Email:Dipesh@gmail.com</Typography>
           <Typography variant="h6">Name: Dipesh</Typography>
@@ -30,7 +32,9 @@ const Dashboard = () => {
             Logout
           </Button>
         </Grid>
-        <Grid item sm={8}></Grid>
+        <Grid item sm={8}>
+          <ChangePassword />
+        </Grid>
       </Grid>
     </>
   );
